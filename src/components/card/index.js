@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import SlideComp from "../slide";
 
 export default function CardComp () {
@@ -44,7 +45,7 @@ export default function CardComp () {
 
     return (
         <div className="content" style={{ padding: "3vh 5vw" }}>
-            <SlideComp data={slide} url="/menu" active={active} setActive={setActive} maxActive={maxActive}/>
+            <SlideComp data={slide} url="/machine" active={active} setActive={setActive} maxActive={maxActive}/>
         </div>
     )
 }
