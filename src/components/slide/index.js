@@ -16,12 +16,12 @@ export default function SlideComp ({ data, url, active, setActive, maxActive }) 
         <div>
             <div className="title-slide">{data.title}</div>
             <div className="desc-slide">{data.desc}</div>
-            <div className="box-slide my-5">
+            <div className="box-slide my-4">
                 <img src={data.image} alt={data.image} height="70%"/>
             </div>
             <div className="d-flex">
                 <div className="number-slide text-white">{data.number}</div>
-                <div className="text-slide text-primary ms-4 px-5 py-3">{data.text}</div>
+                <div className="text-slide text-primary ms-4 px-3">{data.text}</div>
             </div>
             <div className="d-flex justify-content-between box-arrow-slide">
                 <div role="button" onClick={handleBack} className="d-flex align-items-center">
