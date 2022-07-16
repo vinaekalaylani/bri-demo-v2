@@ -1,0 +1,26 @@
+.bg-homepage {
+    height: 30vh;
+    width: 100vw;
+}
+
+.img-person {
+    height: 48vh;
+    display: flex;
+    justify-content: center;
+    margin-top: -27vh;
+}
+
+.btn-homepage {
+    font-size: 2vh;
+    font-weight: 700;
+    
+    height: 11vh;
+    width: 11vh;
+    display: flex;
+    margin-top: -2vh;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: linear-gradient(180deg, #0C6AB5 0%, #72B0DF 67.19%, #C7E6FE 100%);
+}
