@@ -1,7 +1,11 @@
 import ChangeCardComp from "../components/change-card";
+import HeaderComp from "../components/header";
 
-export default function ChangeCard () {
+export default function ChangeCard() {
     return (
-        <ChangeCardComp />
+        <>
+            <HeaderComp url="/service" />
+            <ChangeCardComp />
+        </>
     )
 }

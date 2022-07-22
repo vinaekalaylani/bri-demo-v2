@@ -1,7 +1,11 @@
 import EmailComp from "../components/email";
+import HeaderComp from "../components/header";
 
-export default function Email () {
+export default function Email() {
     return (
-        <EmailComp />
+        <>
+            <HeaderComp url="/service" />
+            <EmailComp />
+        </>
     )
 }

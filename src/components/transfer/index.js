@@ -38,7 +38,7 @@ export default function TransferComp () {
         },
         {
             number: 5,
-            text: "Masukkan Koda Bank",
+            text: "Masukkan Kode Bank",
             title: "Transfer",
             image: "./assets/icon/code.png",
             desc: "Nikmati kemudahan transfer dengan cepat!"

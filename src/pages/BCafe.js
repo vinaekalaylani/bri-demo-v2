@@ -1,7 +1,11 @@
 import BRICafeComp from "../components/bri-cafe";
+import HeaderComp from "../components/header";
 
-export default function BCafe () {
+export default function BCafe() {
     return (
-        <BRICafeComp />
+        <>
+            <HeaderComp url="/unit" />
+            <BRICafeComp />
+        </>
     )
 }

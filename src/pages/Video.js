@@ -1,7 +1,11 @@
+import HeaderComp from "../components/header"
 import VideoComp from "../components/video"
 
-export default function Video () {
+export default function Video() {
     return (
-        <VideoComp />
+        <>
+            <HeaderComp url="/menu" />
+            <VideoComp />
+        </>
     )
 }

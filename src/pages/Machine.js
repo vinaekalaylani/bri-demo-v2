@@ -1,7 +1,11 @@
+import HeaderComp from "../components/header"
 import MachineComp from "../components/machine"
 
-export default function Machine () {
+export default function Machine() {
     return (
-        <MachineComp />
+        <>
+            <HeaderComp url="/menu" />
+            <MachineComp />
+        </>
     )
 }

@@ -1,7 +1,11 @@
+import HeaderComp from "../components/header";
 import TransferComp from "../components/transfer";
 
-export default function Transfer () {
+export default function Transfer() {
     return (
-        <TransferComp />
+        <>
+            <HeaderComp url="/service" />
+            <TransferComp />
+        </>
     )
 }

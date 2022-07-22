@@ -2,6 +2,7 @@ import { useLocation } from "react-router";
 import { useEffect, useState } from "react";
 
 import DetailComp from "../components/detail";
+import HeaderComp from "../components/header";
 
 export default function Detail() {
     const location = useLocation()
@@ -32,11 +33,11 @@ export default function Detail() {
             time: "08.00 - 21.00",
             url: "https://www.google.com/maps/place/Smescoffee+Cafe/@-6.2419482,106.835942,15z/data=!4m2!3m1!1s0x0:0x3f85bf25fcae59df?sa=X&ved=2ahUKEwjVwJmP8ML4AhURimMGHRdYCqMQ_BJ6BAhBEAU",
             location: "JI. Gatot Subroto No.Kav. 94, RT.11/RW.3, Jakarta Selatan 12780, Indonesia",
-            locationImage: "./assets/map-coffe.png",
+            locationImage: "./assets/map-coffee.png",
             images: [
-                "./assets/coffe1.png",
-                "./assets/coffe2.png",
-                "./assets/coffe3.png"
+                "./assets/coffee1.png",
+                "./assets/coffee2.png",
+                "./assets/coffee3.png"
             ]
         },
         {
@@ -101,6 +102,14 @@ export default function Detail() {
         }
     ]
 
+    const getUrl = () => {
+        if (location.search === "?labuan-bajo" || location.search === "?smescoffee" || location.search === "?yogyakarta") {
+            return "/bri-cafe"
+        } else if (location.search === "?ugm" || location.search === "?ipb" || location.search === "?unej") {
+            return "/bri-work"
+        }
+    }
+
     useEffect(() => {
         const [temp] = data.filter((e) => e.params === location.search)
         setDetail(temp)
@@ -108,6 +117,7 @@ export default function Detail() {
 
     return (
         <>
+            <HeaderComp url={getUrl()} />
             {detail.params && (
                 <DetailComp detail={detail} />
             )}
