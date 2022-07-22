@@ -1,7 +1,11 @@
+import HeaderComp from "../components/header"
 import ServiceComp from "../components/service"
 
-export default function Service () {
+export default function Service() {
     return (
-        <ServiceComp />
+        <>
+            <HeaderComp url="/menu" />
+            <ServiceComp />
+        </>
     )
 }

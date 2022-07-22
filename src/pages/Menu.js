@@ -1,8 +1,11 @@
-
+import HeaderComp from "../components/header"
 import MenuComp from "../components/menu"
 
-export default function Menu () {
+export default function Menu() {
     return (
-        <MenuComp />
+        <>
+            <HeaderComp url="/" />
+            <MenuComp />
+        </>
     )
 }

@@ -1,7 +1,11 @@
+import HeaderComp from "../components/header";
 import PassbookComp from "../components/passbook";
 
-export default function Passbook () {
+export default function Passbook() {
     return (
-        <PassbookComp />
+        <>
+            <HeaderComp url="/service" />
+            <PassbookComp />
+        </>
     )
 }

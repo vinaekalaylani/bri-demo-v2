@@ -1,7 +1,11 @@
 import BRIWorkComp from "../components/bri-work";
+import HeaderComp from "../components/header";
 
-export default function BWork () {
+export default function BWork() {
     return (
-        <BRIWorkComp />
+        <>
+            <HeaderComp url="/unit" />
+            <BRIWorkComp />
+        </>
     )
 }

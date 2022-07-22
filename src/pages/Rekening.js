@@ -1,7 +1,11 @@
+import HeaderComp from "../components/header"
 import RekeningComp from "../components/rekening"
 
-export default function Rekening () {
+export default function Rekening() {
     return (
-        <RekeningComp/>
+        <>
+            <HeaderComp url="/service" />
+            <RekeningComp />
+        </>
     )
 }

@@ -1,7 +1,11 @@
 import CardComp from "../components/card"
+import HeaderComp from "../components/header"
 
-export default function Card () {
+export default function Card() {
     return (
-        <CardComp />
+        <>
+            <HeaderComp url="/machine" />
+            <CardComp />
+        </>
     )
 }

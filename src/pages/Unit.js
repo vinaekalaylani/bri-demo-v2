@@ -1,7 +1,11 @@
+import HeaderComp from "../components/header"
 import UnitComp from "../components/unit"
 
-export default function Unit () {
+export default function Unit() {
     return (
-        <UnitComp/>
+        <>
+            <HeaderComp url="/"/>
+            <UnitComp />
+        </>
     )
 }

@@ -1,7 +1,11 @@
+import HeaderComp from "../components/header"
 import MobileComp from "../components/mobile"
 
-export default function Mobile () {
+export default function Mobile() {
     return (
-        <MobileComp />
+        <>
+            <HeaderComp url="/machine" />
+            <MobileComp />
+        </>
     )
 }

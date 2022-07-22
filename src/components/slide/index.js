@@ -21,7 +21,7 @@ export default function SlideComp ({ data, url, active, setActive, maxActive }) 
             </div>
             <div className="d-flex">
                 <div className="number-slide text-white">{data.number}</div>
-                <div className="text-slide text-primary ms-4 px-3">{data.text}</div>
+                <div className="text-slide text-primary ms-4 px-4">{data.text}</div>
             </div>
             <div className="d-flex justify-content-between box-arrow-slide">
                 <div role="button" onClick={handleBack} className="d-flex align-items-center">
